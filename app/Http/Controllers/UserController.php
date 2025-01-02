@@ -199,6 +199,7 @@ class UserController extends Controller
 
     public function save(Request $request)
     {
+        //dd($request);
         // Validation for inputs
         $request->validate([
             'name' => 'required|string|max:255',
